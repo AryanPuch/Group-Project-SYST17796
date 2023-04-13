@@ -1,6 +1,6 @@
 /**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
+ *
+ * We modify and extend to implement our Blackjack game.
  * 
  */
 package ca.sheridancollege.project;
@@ -8,10 +8,9 @@ package ca.sheridancollege.project;
 import java.util.ArrayList;
 
 /**
- * The class that models your game. You should create a more specific child of this class and instantiate the methods
- * given.
+ * The class that models our Blackjack game.
  *
- * @author Aryan Puchimada Date: April 1, 2023
+ * @author Aryan, Shivam, Sofiya, Noman, & Jay  Date: April 1, 2023
  */
 public abstract class Game {
 
@@ -54,58 +53,4 @@ public abstract class Game {
      */
     public abstract void declareWinner();
     
-    public ArrayList<Player> register() {
-        return players;
-    }
-    
-    public void startGame() {
-        
-    }
-    
-    public void startNewGame() {
-        
-    }
-    
-    public int selectBet() {
-        return 0;
-    }
-    
-    public void exitGane() {
-        
-    }
-    
-    public int checkTotalScore() {
-        return 0;
-    }
-    
-    public boolean isWin() {
-        return true;
-    }
-    
-    public void displayRules() {
-        
-    }
-    
-    public void nextMoveChoices() {
-        
-    }
-    
-    public void split() {
-        
-    }
-    
-    public void displayBet(int betValue) {
-        
-    }
-    
-    public void displayScore(int score) {
-        
-    }
-    
-    public static void instructions(String name) {
-        
-        System.out.println("Welcome to Blackjack Game, " + name + "!");
-        System.out.println("The instructions for this game are:");
-        System.out.println("1.Instruction\n2.Instruction");
-    }
 }//end class

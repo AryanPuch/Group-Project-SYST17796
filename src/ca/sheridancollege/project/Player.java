@@ -1,6 +1,5 @@
 /**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
+ * We modify and extend to implement our game.
  * 
  */
 package ca.sheridancollege.project;
@@ -8,7 +7,7 @@ package ca.sheridancollege.project;
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
  *
- * @author Aryan Puchimada Date: April 1, 2023
+ * @author Aryan, Shivam, Sofiya, Noman, & Jay  Date: April 1, 2023
  */
 public abstract class Player {
 
@@ -46,38 +45,4 @@ public abstract class Player {
      */
     public abstract void play();
     
-    public void doubleDown() {
-        
-    }
-    
-    public void playerSurrender() {
-        
-    }
-    
-    public void selectMove() {
-        
-    }
-    
-    public void HIT() {
-        
-    }
-    
-    public void STAND() {
-        
-    }
-    
-    /**
-     * @return the player score
-     */
-    public int getScore() {
-        return score;
-    }
-    
-    /**
-     * 
-     * @param score the player score to set
-     */
-    public void setName(int score) {
-        this.score = score;
-    }
 }
