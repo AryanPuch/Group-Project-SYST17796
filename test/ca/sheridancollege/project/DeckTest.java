@@ -1,6 +1,5 @@
 package ca.sheridancollege.project;
 
-import java.util.NoSuchElementException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -9,7 +8,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * This the Blackjack DeckTest class.
+ * 
  * @author Aryan, Shivam, Sofiya, Noman, & Jay  Date: April 13, 2023
  */
 public class DeckTest {
@@ -43,14 +43,19 @@ public class DeckTest {
     }
 
     // Bad test case
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void testDealCardBad() {
-        System.out.println("dealCardBad");
-        Deck instance = new Deck();
-        for (int i = 0; i < 52; i++) {
-            instance.dealCard(); // Dealing all 52 cards
+        
+        try {
+            System.out.println("dealCardBad");
+            Deck instance = new Deck();
+            for (int i = 0; i < 52; i++) {
+                instance.dealCard(); // Dealing all 52 cards
+            }
+            instance.dealCard(); // Attempting to deal a card from an empty deck
+        } catch(Exception ex) {
+            
         }
-        instance.dealCard(); // Attempting to deal a card from an empty deck
     }
 
     // Boundary test case

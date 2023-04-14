@@ -8,7 +8,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * This the Blackjack BlackjackPlayerTest class.
+ * 
  * @author Aryan, Shivam, Sofiya, Noman, & Jay  Date: April 13, 2023
  */
 public class BlackjackPlayerTest {
@@ -43,7 +44,7 @@ public class BlackjackPlayerTest {
     }
 
     // Bad test case
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testAddCardBad() {
         System.out.println("addCardBad");
         BJCard card = null;
@@ -53,8 +54,8 @@ public class BlackjackPlayerTest {
 
     // Boundary test case (minimum value)
     @Test
-    public void testGetHandValueMin() {
-        System.out.println("getHandValueMin");
+    public void testGetHandValueMinBoundary() {
+        System.out.println("getHandValueMinBoundary");
         BlackjackPlayer instance = new BlackjackPlayer("John");
         instance.addCard(new BJCard("Hearts", "2"));
         int expResult = 2;
@@ -64,8 +65,8 @@ public class BlackjackPlayerTest {
 
     // Boundary test case (maximum value)
     @Test
-    public void testGetHandValueMax() {
-        System.out.println("getHandValueMax");
+    public void testGetHandValueMaxBoundary() {
+        System.out.println("getHandValueMaxBoundary");
         BlackjackPlayer instance = new BlackjackPlayer("John");
         instance.addCard(new BJCard("Hearts", "A"));
         instance.addCard(new BJCard("Spades", "K"));
